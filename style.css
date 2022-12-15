@@ -54,15 +54,15 @@ main {
     top: 50%;
     transform: translate(-50%,-50%);
     background-color: white;
-    width: 280px;
-    height: 570px;
+    width: 250px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
 }
 
 img {
     width: 100%; /* obs: width em 100% permite que a imagem ocupe 100% do seu container */
-    height: 210px;
+    height: 180px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -72,14 +72,14 @@ div#formulario {
 }
 
 div#formulario > h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     padding: 5px;
 }
 
 p.texto {
     text-align: justify;
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 1.1em;
     padding: 10px;
     font-weight: lighter;
