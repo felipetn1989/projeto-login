@@ -15,6 +15,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 .material-icons {
@@ -43,12 +44,19 @@
     font-feature-settings: 'liga';
 }
 
-body {
+body, html {
     background-color: var(--cor0);
     height: 100vh;
+    width: 100vw;
 }
 
 main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -151,7 +159,7 @@ input#forgot:hover {
         border-radius: 20px 0px 0px 20px;
     }
 
-    main {
+    section#login {
         width: 90%;
         height: 340px;
     }
@@ -192,7 +200,7 @@ input#forgot:hover {
         transform: translateX(111%);
     }
 
-    main {
+    section#login {
         width: 950px;
         height: 390px;
     }
