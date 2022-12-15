@@ -66,6 +66,8 @@ section#login {
     height: 515px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 img {
@@ -149,7 +151,7 @@ input#forgot:hover {
     }
 
     div#imagem, div#formulario {
-        display: inline-block;
+        display: inline-block; /* posso usar float left and float right nas divs, colocando as widths em porcentagem */
     }
 
     img {
@@ -159,7 +161,7 @@ input#forgot:hover {
     }
 
     section#login {
-        width: 90%;
+        width: 90vw;
         height: 340px;
     }
 
@@ -234,7 +236,6 @@ input#forgot:hover {
 
     p#bloco3 {
         margin-top: 25px;
-
     }
     
 }
