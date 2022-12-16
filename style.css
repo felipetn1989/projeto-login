@@ -31,6 +31,7 @@
     white-space: nowrap;
     direction: ltr;
     color: white;
+    transform: translateY(20%);
   
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
@@ -66,6 +67,7 @@ section#login {
     height: 515px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+    transform: translate(-50%,-50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -105,9 +107,12 @@ input.fill {
     background-color: var(--cor1);
     border-radius: 10px;
     height: 40px;
-    width: 80%;
-    transform: translateX(3%);
+    width: calc(100% - 34px);
     margin: 2px 0px;
+}
+
+input.fill:focus-within {
+    background-color: white;
 }
 
 P#bloco3 {
@@ -155,9 +160,9 @@ input#forgot:hover {
     }
 
     img {
-        width: 250px;
         height: 340px;
         border-radius: 20px 0px 0px 20px;
+        width: 250px;
     }
 
     section#login {
@@ -175,8 +180,7 @@ input#forgot:hover {
     }
 
     input.fill {
-        width: 85%;
-        transform: translateX(3.5%);
+        width: calc(100% - 35px);
     }
 
     input.botoes {
